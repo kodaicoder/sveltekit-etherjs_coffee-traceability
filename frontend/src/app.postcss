@@ -1,0 +1,38 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+.flatpickr-input ~ .input[readonly] {
+	cursor: pointer !important;
+	border-width: 1px !important;
+}
+
+.select-svelte {
+	@apply text-surface-900-50-token !bg-surface-200-700-token !border-surface-500 !cursor-pointer [&_input]:!cursor-pointer;
+}
+.select-svelte.focused,
+.select-svelte.list-open {
+	@apply !border-primary-500;
+}
+
+.select-svelte.disabled {
+	@apply !bg-surface-400-500-token cursor-not-allowed;
+}
+
+.select-svelte.disabled input {
+	@apply !cursor-not-allowed placeholder:!text-surface-500-400-token;
+}
+
+.select-svelte-list {
+	@apply px-6 absolute left-0 w-full text-surface-900-50-token !bg-surface-100-800-token hover:!bg-surface-300-600-token;
+}
+
+.select-svelte-empty {
+	@apply text-center p-4 !bg-surface-700 !border !border-surface-500 !rounded;
+}

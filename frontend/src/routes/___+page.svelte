@@ -1,10 +1,9 @@
 <script>
 	// @ts-nocheck
 	import SimpleStorage from '../contracts/SimpleStorage.json';
-	import { onMount, afterUpdate } from 'svelte';
+	import { onMount } from 'svelte';
 	import { ethers } from 'ethers';
 	import QRCode from 'easyqrcodejs';
-	//import { Html5QrcodeScanner } from 'html5-qrcode';
 	import {
 		defaultEvmStores as evm,
 		connected,
@@ -60,8 +59,6 @@
 			await connectWallet();
 		}
 	});
-
-	// afterUpdate(async () => await createQRScanner());
 
 	async function handleAccountsChanged(newAccounts) {
 		if (Array.isArray(newAccounts) && newAccounts.length > 0 && newAccounts[0]) {
