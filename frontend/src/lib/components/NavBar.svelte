@@ -1,13 +1,13 @@
 <script>
 	import { onMount } from 'svelte';
 	import { AppBar } from '@skeletonlabs/skeleton';
-	import SimpleStorage from '$contracts/SimpleStorage.json';
+	import CoffeeTraceability from '$contracts/CoffeeTraceability.json';
 	import { contractInterfaceStore } from '$lib/stores/contractInterface';
 
 	import logoImg from '$lib/assets/images/logo_color_circle.png';
 
 	onMount(() => {
-		contractInterfaceStore.updateContract(SimpleStorage.abi);
+		contractInterfaceStore.updateContract(CoffeeTraceability.abi);
 	});
 </script>
 

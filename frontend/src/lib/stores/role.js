@@ -41,20 +41,20 @@ const allRole = [
     },
     {
         value: 2,
-        label: 'Roasting plant',
+        label: 'Roasting Plant',
         role: [
-            { value: 1, label: 'Warehouse Keeper' },
-            { value: 2, label: 'Roaster' },
-            { value: 3, label: 'Curer' },
-            { value: 4, label: 'Roasting Plant Packager' }
+            { value: 1, label: "Warehouse Keeper" },
+            { value: 2, label: "Roaster" },
+            { value: 3, label: "Curer" },
+            { value: 4, label: "Roasting Plant Packager" }
         ]
     },
     {
         value: 3,
-        label: 'Coffee shop',
+        label: "Coffee Shop",
         role: [
-            { value: 1, label: 'Store Keeper' },
-            { value: 2, label: 'Barista' }
+            { value: 1, label: "Store Keeper" },
+            { value: 2, label: "Barista" }
         ]
     },
     {
